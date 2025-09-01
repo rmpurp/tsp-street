@@ -1,5 +1,6 @@
 import type { Entity } from "../Entities/Entity.ts";
 import { TextEntity } from "../Entities/TextEntity.ts";
+import { Ball } from "../Entities/Ball.ts";
 
 export class World {
   public lastTimestamp: DOMHighResTimeStamp | null = null;
@@ -7,6 +8,7 @@ export class World {
 
   constructor() {
     this.entities.push(new TextEntity(100, 100, 0));
+    this.entities.push(new Ball(250, 250, 0, 100, 0));
   }
 
   draw(context: CanvasRenderingContext2D): void {
