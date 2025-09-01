@@ -1,5 +1,6 @@
 import viteLogo from "/vite.svg";
 import "./App.css";
+import CanvasAnimation from "./CanvasAnimation.tsx";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <h1>Hello There</h1>
+        <CanvasAnimation width={400} height={400} />
       </div>
     </>
   );
